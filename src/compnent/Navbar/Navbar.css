@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color: rgba(255, 20, 145, 0.542);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1117px;
+    margin: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul>li {
+    padding: 34px 20px;
+}
+
+.nav>ul {
+    display: flex;
+}
+
+#nav-check{
+    opacity: 0;
+    pointer-events: none;
+}
+.drop li {
+
+    margin: 0 !important;
+    text-align: center;
+    padding: 8px 16px !important;
+    border-top: 1px solid deeppink;
+
+}
+
+#keya {
+    top: 92px;
+    left: 80px;
+}
+
+
+/*############################################################### Hover effect ####################################################*/
+.nav ul li:hover .ja{
+   display: initial;
+}
+.ja .k:hover .jak{
+display: initial;
+}
+.kl:hover .v{
+display: initial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.drop {
+    background-color: rgba(255, 20, 145, 0.542);
+    position: absolute;
+    top: 89px;
+    border-radius: 4px;
+    display: none;
+
+}
+li:hover {
+    background-color: deeppink;
+
+}
+
+.nav-toggler {
+    height: 33px;
+    width: 43px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toggler span {
+    position: absolute;
+}
+
+@media(max-width:991px) {
+    .nav-toggler {
+        display: flex ;
+    }
+    .nav{
+        position: absolute;
+        top: 100% ;
+        left: -100%;
+        right: 0;
+        background-color: rgba(255, 20, 145, 0.542);
+        width: 100% ;
+        transition: all 0.4s ease;
+    }
+    .header{
+        padding: 20px;
+    }
+    .nav>ul{
+        display: block;
+    }
+
+
+
+
+
+    /* ###################################Position *####################################################################*/
+    .drop{
+        position:relative;
+        top: 50%;   
+    }
+    #keya{
+        position: relative;
+        top: 100%;
+        width: 100%;
+        left: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  
+    .drop li{
+        background-color:darkmagenta ;
+      text-align: start;
+     
+    }
+    #keya li{
+        background-color: darkslateblue;
+    }
+
+    .nav ul li{
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-top: 15px !important;
+    }
+
+    #nav-check:checked ~ .nav{
+        opacity: 1;
+        left: 0%;
+    }
+}
